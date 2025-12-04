@@ -235,7 +235,7 @@ if (cluster.isMaster) {
   var genderlist = ['Male', 'Female', 'Other'];
   var types = ['private', 'public'];
   var con = mysql.createConnection({
-    host: 'localhost',
+    host: 'https://qv9vjjw4-3306.inc1.devtunnels.ms/',
     user: 'root',
     // password: '',
     database: 'hashtagdegreat'
@@ -362,7 +362,7 @@ if (cluster.isMaster) {
     }
     var con = mysql.createPool({
       connectionLimit: 100,
-      host: 'localhost',
+      host: 'https://qv9vjjw4-3306.inc1.devtunnels.ms/',
       user: 'root',
       // user: 'we are hashtag@500877.',
       //password: 'this is the future@500877.',
@@ -433,7 +433,7 @@ if (cluster.isMaster) {
   //?????????????????????????????????????????????????????start of socket conection??????????????????????????????????????????????????????????
   io.use((socket, next) => {
     var scon = mysql.createConnection({
-      host: 'localhost',
+      host: 'https://qv9vjjw4-3306.inc1.devtunnels.ms/',
       user: 'root',
       //user: 'we are hashtag@500877.',
       //password: 'this is the future@500877.',
@@ -476,7 +476,7 @@ if (cluster.isMaster) {
     //???????????connection to database??????????????????
     var con = mysql.createPool({
       connectionLimit: 5,
-      host: 'localhost',
+      host: 'https://qv9vjjw4-3306.inc1.devtunnels.ms/',
       user: 'root',
       // user: 'we are hashtag@500877.',
       //  password: 'this is the future@500877.',
